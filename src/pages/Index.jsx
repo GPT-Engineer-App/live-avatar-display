@@ -34,9 +34,7 @@ const Index = () => {
                 <Heading as="h3" size="md">
                   {agent.name}
                 </Heading>
-                <Tag size="lg" variant="solid" colorScheme={agent.onStage ? "green" : "red"}>
-                  {agent.onStage ? "On Stage" : "Off Stage"}
-                </Tag>
+                {/* Tag removed as it's no longer needed */}
                 <Button leftIcon={<FaRobot />} colorScheme="teal" onClick={() => toggleOnStage(agent.id)}>
                   Toggle Stage
                 </Button>
